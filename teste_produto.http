@@ -1,0 +1,41 @@
+### Listar produtos
+GET http://localhost:5000/produtos HTTP/1.1
+Host: localhost:5000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwOTA4NTU1NiwianRpIjoiZWZmNzRiM2MtZWFjOS00ZGM1LWFlYmMtNDliOWU4Y2JmZGE0IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNzA5MDg1NTU2LCJjc3JmIjoiOTJhZTM2NTktNzE2Ny00NTVlLTkwOTktMzUyNWVlZjY2NGE0IiwiZXhwIjoxNzA5MDg2NDU2fQ.gSgM7sKK9nuR8QUA7FKTMX5CzXttrGE7l5vDyX45rhs
+
+### Criar produto
+POST http://localhost:5000/produtos HTTP/1.1
+Host: localhost:5000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwODcxMzAzNywianRpIjoiNjMyMTllZTItM2I4ZS00ZDZhLTkzZTAtNGYxODE0YmI2MzdkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNzA4NzEzMDM3LCJjc3JmIjoiNTgwMjU2MzAtMGM0MS00Y2I5LTkxMDgtZDJmMzJiNDU3OGNkIiwiZXhwIjoxNzA4NzEzOTM3fQ.gnqeIkj5M8EJBSxjgdiTs6B8yammoqqN09nC1M0_aNs
+
+{
+    "nome": "Produto 2",
+    "descricao": "Descricao do produto 2",
+    "preco": 2.0
+}
+
+### Recuperar produto
+GET http://localhost:5000/produtos/2 HTTP/1.1
+Host: localhost:5000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwOTAwMDQ2NCwianRpIjoiODMyZTNjNGUtZjg5YS00OWNlLTgyZjktYmJjNDZlNDY1OWI1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MSwibmJmIjoxNzA5MDAwNDY0LCJjc3JmIjoiZmM5YjAyYzgtN2M3NC00YjUxLWI1NWUtZDdhYjdhNjA0ZGUwIiwiZXhwIjoxNzA5MDAwNzY0fQ.69fViWoeVQaXSd0Tk8dg8qrYWGk6Jmyk-Mm8Is-VfDI
+
+### Atualizar produto
+PUT  http://localhost:5000/produtos/2 HTTP/1.1
+Host: localhost:5000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwODcxMzAzNywianRpIjoiNjMyMTllZTItM2I4ZS00ZDZhLTkzZTAtNGYxODE0YmI2MzdkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNzA4NzEzMDM3LCJjc3JmIjoiNTgwMjU2MzAtMGM0MS00Y2I5LTkxMDgtZDJmMzJiNDU3OGNkIiwiZXhwIjoxNzA4NzEzOTM3fQ.gnqeIkj5M8EJBSxjgdiTs6B8yammoqqN09nC1M0_aNs
+
+{
+    "nome": "Produto 2 atualizado",
+    "descricao": "Descricao do produto 2",
+    "preco": 20.0
+}
+
+### Deletar produto
+DELETE http://localhost:5000/produtos/2 HTTP/1.1
+Host: localhost:5000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwODcxMzAzNywianRpIjoiNjMyMTllZTItM2I4ZS00ZDZhLTkzZTAtNGYxODE0YmI2MzdkIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6MiwibmJmIjoxNzA4NzEzMDM3LCJjc3JmIjoiNTgwMjU2MzAtMGM0MS00Y2I5LTkxMDgtZDJmMzJiNDU3OGNkIiwiZXhwIjoxNzA4NzEzOTM3fQ.gnqeIkj5M8EJBSxjgdiTs6B8yammoqqN09nC1M0_aNs

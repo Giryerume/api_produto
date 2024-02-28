@@ -1,0 +1,25 @@
+### Registrar usuario
+POST http://localhost:5000/register HTTP/1.1
+Host: localhost:5000
+Content-Type: application/json
+
+{
+    "nome": "Usuario 1",
+    "senha": "Senha 1"
+}
+
+### Logar usuario
+POST http://localhost:5000/login HTTP/1.1
+Host: localhost:5000
+Content-Type: application/json
+
+{
+    "nome": "Usuario 1",
+    "senha": "Senha 1"
+}
+
+### Recarregar usuario
+POST http://localhost:5000/refresh HTTP/1.1
+Host: localhost:5000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcwOTA2NTU5OCwianRpIjoiNGM2MTMyYmEtMTYwMy00ODQyLWJkODEtZjIwYTVlZDBjYTkzIiwidHlwZSI6InJlZnJlc2giLCJzdWIiOjEsIm5iZiI6MTcwOTA2NTU5OCwiY3NyZiI6IjBjNDIwMjhiLWIxNmEtNGNkNS1iODZlLWNjNDljM2RiZmZmNSIsImV4cCI6MTcwOTA2OTE5OH0.FNNZYsSuCOKmDE-JguW-QKl093Z_A4ZGxIyMBvBFN4k

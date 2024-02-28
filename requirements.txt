@@ -1,0 +1,7 @@
+Flask
+Flask-SQLAlchemy
+Flask-JWT-Extended
+mysqlclient
+gunicorn
+flask-cors
+python-dotenv
